@@ -1,6 +1,6 @@
 # algorithms
 
-| \\\\# | Title              | Solution   |
+| # | Title              | Solution   |
 | ----- | ------------------ | ---------- |
 | 912   | [Sort an Array][1] | [Swift][2] |
 
