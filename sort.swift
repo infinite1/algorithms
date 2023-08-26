@@ -1,3 +1,4 @@
+// Selection Sort
 func sortArray(_ nums: [Int]) -> [Int] {
     var res = [Int]()
     var arr = nums
