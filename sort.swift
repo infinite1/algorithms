@@ -1,4 +1,4 @@
-// Selection Sort
+// selection sort
 func sortArray(_ nums: [Int]) -> [Int] {
     var res = [Int]()
     var arr = nums
@@ -20,4 +20,20 @@ func findSmallestNumIndex(_ nums: [Int]) -> Int {
         }
     }
     return smallestNumIndex
+}
+
+// quick sort
+func sortArray(_ nums: [Int]) -> [Int] {
+    if nums.count < 2 {
+        return nums
+    } else {
+        let pivot = nums[0]
+        let left = nums[1...].filter { num in
+            return num <= pivot
+        }
+        let right = nums[1...].filter { num in
+            return num > pivot
+        }
+        return sortArray(left) + [pivot] + sortArray(right)
+    }
 }
